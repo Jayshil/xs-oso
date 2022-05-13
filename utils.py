@@ -87,8 +87,3 @@ def lcbin(time, flux, binwidth=0.06859, nmin=4, time0=None,
 
     j = (n_bin >= nmin)
     return t_bin[j], f_bin[j], e_bin[j], n_bin[j]
-
-xx = np.linspace(0, 90, 1000)
-yy = model(xx, 0., 0.1, 0.4, 0.3, 0.13, 0.1, 25, 30, 47, 77, 1.5, 1.5, 1.5, 1.5)
-plt.plot(xx, yy)
-plt.show()
